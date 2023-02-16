@@ -32,6 +32,8 @@ ex2) `export LLVM_DIR=/usr/lib/llvm-14`
 
 Then, you can find `LLVMProj2.so` in `build/lib/Proj2/`.
 
+If you modify pass source code, just `make` again.
+
 ## Run
 
 `opt -load ./build/lib/Proj2/LLVMProj2.so --proj2 /your/bitcode_or_ircode/path -enable-new-pm=0`
