@@ -8,19 +8,6 @@
 
 using namespace llvm;
 
-// namespace {
-//     struct Hello : public FunctionPass {
-//         static char ID;
-//         Hello() : FunctionPass( ID ) {}
-
-//         bool runOnFunction( Function &F ) override {
-//             errs() << "Hello: ";
-//             errs().write_escaped( F.getName() ) << '\n';
-//             return false;
-//         }
-//     }; // end of struct Hello
-// }  // end of anonymous namespace
-
 namespace {
     struct Proj2 : public ModulePass {
         static char ID;
